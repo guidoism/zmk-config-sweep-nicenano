@@ -59,10 +59,10 @@
 
         default_layer {
             bindings = <
-  &kp Q   &kp W   &kp E   &kp R           &kp T      &kp Y   &kp U      &kp I    &kp O             &kp P
-  &kp A   &kp S   &kp D   &kp F           &kp G      &kp H   &kp J      &kp K    &kp L         &kp COLON
-  &kp Z   &kp X   &kp C   &kp V           &kp B      &kp N   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-                          &mo 1  &kp LEFT_SHIFT  &kp SPACE   &mo 2
+  &kp Q   &kp W   &kp E   &kp R           &kp T                   &kp Y   &kp U      &kp I    &kp O             &kp P
+  &kp A   &kp S   &kp D   &kp F           &kp G                   &kp H   &kp J      &kp K    &kp L         &kp COLON
+  &kp Z   &kp X   &kp C   &kp V           &kp B                   &kp N   &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+                          &mo 1  &kp LEFT_SHIFT  &mt LEFT_CONTROL SPACE   &mo 2
             >;
         };
 
@@ -77,10 +77,10 @@
 
         right_layer {
             bindings = <
- &kp BANG   &kp ATSN  &kp HASH  &kp DLLR  &kp PRCT   &kp CRRT      &kp AMPS  &kp KMLT  &kp LPRN   &kp RPRN
- &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN  &kp MINUS  &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
- &kp LSFT   &kp KPLS  &kp LBKT  &kp RBKT  &kp BSLH  &kp UNDER      &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT
-                                   &mo 3  &kp LCTL    &kp SPC         &mo 2
+ &kp BANG   &kp ATSN  &kp HASH  &kp DLLR  &kp PRCT   &kp CRRT  &kp PG_UP    &kp UP  &kp PG_DN   &kp RPRN
+ &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN  &kp MINUS   &kp LEFT  &kp DOWN  &kp RIGHT   &kp BKSP
+ &kp LSFT   &kp KPLS  &kp LBKT  &kp RBKT  &kp BSLH  &kp UNDER   &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT
+                                   &mo 3  &kp LCTL    &kp SPC      &mo 2
             >;
         };
 
