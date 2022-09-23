@@ -77,10 +77,10 @@
 
         right_layer {
             bindings = <
- &kp BANG   &kp ATSN  &kp HASH  &kp DLLR  &kp PRCT   &kp CRRT  &kp PG_UP    &kp UP  &kp PG_DN   &kp RPRN
- &kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN  &kp MINUS   &kp LEFT  &kp DOWN  &kp RIGHT   &kp BKSP
- &kp LSFT   &kp KPLS  &kp LBKT  &kp RBKT  &kp BSLH  &kp UNDER   &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT
-                                   &mo 3  &kp LCTL    &kp SPC      &mo 2
+ &kp BANG  &kp ATSN   &kp X     &kp X  &kp PRCT   &kp CRRT  &kp PG_UP    &kp UP  &kp PG_DN  &kp RPRN
+    &kp X     &kp X   &kp X  &kp COLN  &kp SCLN  &kp MINUS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp BKSP
+ &kp LSFT  &kp KPLS   &kp X     &kp X     &kp X  &kp UNDER      &kp X     &kp X      &kp X     &kp X
+                                &mo 3  &kp LCTL    &kp SPC      &mo 2
             >;
         };
 
