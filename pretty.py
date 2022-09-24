@@ -18,9 +18,11 @@ def make_key(k):
     print(k)
     k = k or ''
     sec = ''
-    if m := re.match(r'&kp (\S+)', k):
+    if m := re.match(r'&none', k):
+        k = ''
+    elif m := re.match(r'&kp (\S+)', k):
         k = m.group(1)
-    if m := re.match(r'&mt (\S+) (\S+)', k):
+    elif m := re.match(r'&mt (\S+) (\S+)', k):
         sec, k = m.groups()
         sec = pretty.get(sec, sec)
     k = pretty.get(k, k)
