@@ -80,16 +80,16 @@
  &none  &none   &none     &none  &none    &none     &mt HOME PG_UP    &kp UP     &mt END PG_DN     &none
  &none  &none   &none     &none  &none    &kp MINUS    &kp LEFT          &kp DOWN   &kp RIGHT      &none
  &none  &none   &none     &none  &none    &none    &none             &none      &none          &none
-                                &mo 3  &kp LCTL    &kp SPC      &mo 2
+                                &mo 3  &kp LCTL    &kp SPACE      &mo 2
             >;
         };
 
         tri_layer {
             bindings = <
- &none &none &none &none &none   &none  &none  &none &none  &none
- &none &none &none &none &none   &none  &none   &none  &none   &none  
- &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &none  &none    &none  &none  &none &none  &none
-                                        &none     &none  &none     &none
+ &none       &none       &none          &none  &none  &none  &none  &none &none  &none
+ &none       &none       &none          &none  &none  &none  &none  &none &none  &none  
+ &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &none  &none  &none  &none  &none &none  &none
+                                        &none  &none  &none  &none
             >;
         };
 
