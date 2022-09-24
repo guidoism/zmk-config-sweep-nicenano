@@ -77,7 +77,7 @@
 
         right_layer {
             bindings = <
- &kp BANG  &kp ATSN   &kp X     &kp X  &kp PRCT   &kp CRRT  &kp PG_UP    &kp UP  &kp PG_DN  &kp RPRN
+ &kp BANG  &kp ATSN   &kp X     &kp X  &kp PRCT   &kp CRRT  &ht_hp HOME PG_UP    &kp UP  &ht_hp END PG_DN  &kp RPRN
     &kp X     &kp X   &kp X  &kp COLN  &kp SCLN  &kp MINUS   &kp LEFT  &kp DOWN  &kp RIGHT  &kp BKSP
  &kp LSFT  &kp KPLS   &kp X     &kp X     &kp X  &kp UNDER      &kp X     &kp X      &kp X     &kp X
                                 &mo 3  &kp LCTL    &kp SPC      &mo 2
