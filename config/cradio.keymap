@@ -86,19 +86,19 @@
 
         tri_layer {
             bindings = <
- &none &none &none &none &none   &trans  &trans  &trans &trans  &trans
- &none &none &none &none &none   &trans  &none   &none  &none   &none  
- &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &none  &none    &trans  &trans  &trans &trans  &trans
-                                        &trans     &trans  &trans     &trans
+ &none &none &none &none &none   &none  &none  &none &none  &none
+ &none &none &none &none &none   &none  &none   &none  &none   &none  
+ &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &none  &none    &none  &none  &none &none  &none
+                                        &none     &none  &none     &none
             >;
         };
 
         Layer__4 {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                         &none  &none  &none  &none
             >;
         };
     };
