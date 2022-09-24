@@ -77,18 +77,18 @@
 
         right_layer {
             bindings = <
- &kp BANG  &kp ATSN   &kp X     &kp X  &kp PRCT    &kp CRRT     &mt HOME PG_UP    &kp UP     &mt END PG_DN  &kp RPRN
-    &kp X     &kp X   &kp X  &kp COLN  &kp SCLN    &kp MINUS    &kp LEFT          &kp DOWN   &kp RIGHT      &kp BKSP
- &kp LSFT  &kp KPLS   &kp X     &kp X  &kp X       &kp UNDER    &kp X             &kp X      &kp X          &kp X
+ &none  &none   &none     &none  &none    &none     &mt HOME PG_UP    &kp UP     &mt END PG_DN     &none
+ &none  &none   &none     &none  &none    &kp MINUS    &kp LEFT          &kp DOWN   &kp RIGHT      &none
+ &none  &none   &none     &none  &none    &kp UNDER    &none             &none      &none          &none
                                 &mo 3  &kp LCTL    &kp SPC      &mo 2
             >;
         };
 
         tri_layer {
             bindings = <
-  &kp NUM_1   &kp NUM_2   &kp NUM_3  &kp NUM_4  &kp NUM_5  &trans     &trans        &trans      &trans  &trans
-     &kp F1      &kp F2      &kp F3     &kp F4     &kp F5  &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
- &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &kp F6     &kp F7  &trans  &kp PG_DN  &kp K_VOL_DN      &trans  &trans
+ &none &none &none &none &none   &trans  &trans  &trans &trans  &trans
+ &none &none &none &none &none   &trans  &none   &none  &none   &none  
+ &bt BT_CLR  &bt BT_NXT  &bt BT_PRV     &none  &none    &trans  &trans  &trans &trans  &trans
                                         &trans     &trans  &trans     &trans
             >;
         };
