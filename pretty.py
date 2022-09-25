@@ -18,6 +18,7 @@ def make_key(k):
     print(k)
     k = k or ''
     sec = ''
+    classes = ['key']
     if m := re.match(r'&none', k):
         k = ''
     elif m := re.match(r'&kp (\S+)', k):
@@ -26,8 +27,11 @@ def make_key(k):
         sec, k = m.groups()
         sec = pretty.get(sec, sec)
     k = pretty.get(k, k)
+    if not k:
+        classes.append('empty')
+    classes.append(f'len{len(k)}')
     return {
-        'classes': ' '.join(['key', f'len{len(k)}']),
+        'classes': ' '.join(classes),
         'name': k,
         'secondary': sec,
     }
@@ -41,7 +45,7 @@ for name, layer in re.findall(r'(\w+_layer) {\s+bindings = <(.+?)>;', s, re.DOTA
     for row in chunk(re.findall(r'(&[^&]+)', layer, re.DOTALL), 10):
         row = [make_key(k) for k in row if k is not None]
         if len(row) == 4:
-            row = [{'classes': 'empty'}] * 3 + row + [{'classes': 'empty'}] * 3
+            row = [{'classes': 'gone'}] * 3 + row + [{'classes': 'gone'}] * 3
         rows.append(row)
     layers.append(rows)
 
