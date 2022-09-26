@@ -23,6 +23,9 @@ def make_key(k):
         k = ''
     elif m := re.match(r'&kp (\S+)', k):
         k = m.group(1)
+    elif m := re.match(r'&sk (\S+)', k):
+        k = m.group(1)
+        classes.append('oneshot')
     elif m := re.match(r'&mt (\S+) (\S+)', k):
         sec, k = m.groups()
         sec = pretty.get(sec, sec)
