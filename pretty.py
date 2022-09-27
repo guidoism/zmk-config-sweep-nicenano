@@ -2,17 +2,17 @@ import re, jinja2
 from pprint import pprint as pp
 from itertools import zip_longest
 
+common_sequences = [
+    ('left inner thumb', 'right outer thumb'), # Edit layer
+
+]
+
+
 # TODO: combos
 
 def chunk(it, n):
     args = [iter(it)] * n
     return list(zip_longest(*args))
-
-
-#    if len(ret) == n:
-#        return ret
-#    padding = [''] * ((n - len(ret)) // 2)
-#    return padding + ret + padding
 
 def make_key(k):
     print(k)
