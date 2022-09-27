@@ -31,8 +31,8 @@ def make_key(k):
         k = m.group(1)
     elif m := re.match(r'&kp (\S+)', k):
         k = m.group(1)
-    elif m := re.match(r'&sk (\S+)', k):
-        k = m.group(1)
+    elif m := re.match(r'&(sk|sl) (\S+)', k):
+        k = m.group(2)
         classes.append('oneshot')
     elif m := re.match(r'&mo (\S+)', k):
         layers = {
@@ -48,7 +48,8 @@ def make_key(k):
     k = pretty.get(k, k)
     if not k:
         classes.append('empty')
-    classes.append(f'len{len(k)}')
+    if not k.startswith('&#x'):
+        classes.append(f'len{len(k)}')
     return {
         'classes': ' '.join(classes),
         'name': k,

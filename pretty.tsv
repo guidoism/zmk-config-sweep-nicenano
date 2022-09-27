@@ -88,3 +88,6 @@ LC(SPACE)       MARK
 BT_CLR          &#xf293×
 BT_NXT          &#xf293+
 BT_PRV          &#xf293-
+LC(TAB)         +TAB
+LC(LS(TAB))     -TAB
+LG(LEFT_BRACKET) &#xf9aa
