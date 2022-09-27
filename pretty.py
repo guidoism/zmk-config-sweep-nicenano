@@ -21,11 +21,20 @@ def make_key(k):
     classes = ['key']
     if m := re.match(r'&none', k):
         k = ''
+    elif m := re.match(r'&caps_word', k):
+        k = 'CAPS'
     elif m := re.match(r'&kp (\S+)', k):
         k = m.group(1)
     elif m := re.match(r'&sk (\S+)', k):
         k = m.group(1)
         classes.append('oneshot')
+    elif m := re.match(r'&mo (\S+)', k):
+        layers = {
+            '1': 'NUM',
+            '2': 'MOV',
+        }
+        k = m.group(1)
+        k = layers.get(k, k)
     elif m := re.match(r'&mt (\S+) (\S+)', k):
         sec, k = m.groups()
         sec = pretty.get(sec, sec)
@@ -43,7 +52,6 @@ pretty = {k: v for k, v in [s.split() for s in open('pretty.tsv')]}
 s = open('config/cradio.keymap').read()
 layers = []
 for name, layer in re.findall(r'(\w+_layer) {\s+bindings = <(.+?)>;', s, re.DOTALL):
-    #print(name)
     rows = []
     for row in chunk(re.findall(r'(&[^&]+)', layer, re.DOTALL), 10):
         row = [make_key(k) for k in row if k is not None]
@@ -52,19 +60,19 @@ for name, layer in re.findall(r'(\w+_layer) {\s+bindings = <(.+?)>;', s, re.DOTA
         rows.append(row)
     layers.append(rows)
 
-#pp(layers)
-
 environment = jinja2.Environment()
 template = environment.from_string(open('pretty.html').read())
 open('/tmp/aaa.html', 'w').write(template.render(layers=layers))
 
 
 
-quit()
 
 
 
 
+
+
+quit() ############## DEAD ################
 for ln, layer in enumerate(chunk(tbl, 4)):
     parts = []
     parts.append(f'<a name="{ln}">')

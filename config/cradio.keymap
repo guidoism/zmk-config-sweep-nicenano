@@ -69,28 +69,37 @@
 
         default_layer {
             bindings = <
-  &kp Q   &kp W   &kp E   &kp R    &kp T           &kp Y              &kp U      &kp I      &kp O             &kp P
-  &kp A   &kp S   &kp D   &kp F    &kp G           &kp H              &kp J      &kp K      &kp L             &sk LEFT_SHIFT
-  &kp Z   &kp X   &kp C   &kp V    &kp B           &kp N              &kp M      &kp COMMA  &kp DOT           &kp SINGLE_QUOTE
-                          &mo 1    &kp LEFT_SHIFT  &mt LEFT_CONTROL   SPACE      &mo 2
+  &kp Q   &kp W   &kp E   &kp R    &kp T    &kp Y             &kp U      &kp I      &kp O             &kp P
+  &kp A   &kp S   &kp D   &kp F    &kp G    &kp H             &kp J      &kp K      &kp L             &sk LSHIFT
+  &kp Z   &kp X   &kp C   &kp V    &kp B    &kp N             &kp M      &kp COMMA  &kp DOT           &kp SINGLE_QUOTE
+                          &mo 1    &mo 2    &mt LCTRL SPACE   &sk LCMD
             >;
         };
 
-        left_layer {
+        num_layer {
             bindings = <
- &kp GRAVE          &kp TILDE              &kp PIPE              &kp BACKSLASH           &kp MINUS  &kp UNDERSCORE  &kp N7      &kp N8  &kp N9      &kp BACKSPACE
- &kp LEFT_BRACKET   &kp RIGHT_BRACKET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp PLUS   &kp EQUAL       &kp N4      &kp N5  &kp N6      &kp RETURN
- &kp LEFT_BRACE     &kp RIGHT_BRACE        &kp LESS_THAN         &kp GREATER_THAN        &kp DOT    &kp N0  &kp N1  &kp N2      &kp N3  &kp SLASH
-                                                                 &mo 1                   &kp LGUI   &kp RGUI        &mo 2
+ &kp GRAVE          &kp TILDE              &kp PIPE              &kp BACKSLASH           &kp PLUS   &kp COLON       &kp N7      &kp N8  &kp N9      &none
+ &kp LEFT_BRACKET   &kp RIGHT_BRACKET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp MINUS  &kp EQUAL       &kp N4      &kp N5  &kp N6      &caps_word
+ &kp LEFT_BRACE     &kp RIGHT_BRACE        &kp LESS_THAN         &kp GREATER_THAN        &kp DOT    &kp N0          &kp N1      &kp N2  &kp N3      &kp SLASH
+                                                                 &mo 1                   &none      &kp SPACE       &none
             >;
         };
 
-        right_layer {
+        mov_layer {
             bindings = <
- &none  &none   &none     &none  &none    &none         &mt HOME PG_UP    &kp UP     &mt END PG_DN     &kp BACKSPACE
- &none  &none   &none     &none  &none    &kp MINUS     &kp LEFT          &kp DOWN   &kp RIGHT         &kp RETURN
- &none  &none   &none     &none  &none    &none         &none             &none      &none             &none
-                                 &mo 3    &kp LCTL      &kp SPACE         &mo 2
+ &none     &none       &none      &none     &none         &none         &mt HOME PG_UP    &kp UP     &mt END PG_DN     &kp BACKSPACE
+ &kp LALT  &kp LSHIFT  &kp LCTRL  &kp LCMD  &kp LC(SPACE) &none         &kp LEFT          &kp DOWN   &kp RIGHT         &kp RETURN
+ &none     &none       &none      &none     &none         &none         &none             &none      &none             &none
+                                  &none     &none         &kp SPACE     &none
+            >;
+        };
+
+        edit_layer {
+            bindings = <
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+                      &none  &none  &none  &none
             >;
         };
 
@@ -103,13 +112,5 @@
             >;
         };
 
-        Layer__4 {
-            bindings = <
- &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
- &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
- &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-                         &none  &none  &none  &none
-            >;
-        };
     };
 };
