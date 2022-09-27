@@ -36,6 +36,7 @@ def make_key(k):
         layers = {
             '1': 'NUM',
             '2': 'MOV',
+            '3': 'EDIT',
         }
         k = m.group(1)
         k = layers.get(k, k)

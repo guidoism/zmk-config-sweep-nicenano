@@ -90,14 +90,14 @@
  &none     &none       &none      &none     &none         &none         &mt HOME PG_UP    &kp UP     &mt END PG_DN     &kp BACKSPACE
  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp LCMD  &kp LC(SPACE) &none         &kp LEFT          &kp DOWN   &kp RIGHT         &kp RETURN
  &none     &none       &none      &none     &none         &none         &none             &none      &none             &none
-                                  &none     &none         &kp SPACE     &none
+                                  &none     &none         &kp SPACE     &sl 3
             >;
         };
 
         edit_layer {
             bindings = <
  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
- &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+ &none  &none  &kp F3 &kp F4 &none  &none  &none  &none  &none  &none
  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
                       &none  &none  &none  &none
             >;
