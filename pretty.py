@@ -23,6 +23,10 @@ def make_key(k):
         k = ''
     elif m := re.match(r'&caps_word', k):
         k = 'CAPS'
+    elif m := re.match(r'&bootloader', k):
+        k = 'RESET'
+    elif m := re.match(r'&bt (\S+)', k):
+        k = m.group(1)
     elif m := re.match(r'&kp (\S+)', k):
         k = m.group(1)
     elif m := re.match(r'&sk (\S+)', k):

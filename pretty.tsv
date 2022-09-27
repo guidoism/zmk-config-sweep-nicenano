@@ -85,3 +85,6 @@ DOWN            &#xea9a
 LEFT            &#xea9b
 RIGHT           &#xea9c
 LC(SPACE)       MARK
+BT_CLR          &#xf293×
+BT_NXT          &#xf293+
+BT_PRV          &#xf293-
