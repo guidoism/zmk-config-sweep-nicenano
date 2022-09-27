@@ -18,6 +18,7 @@
         other_buffer: other_buffer {
             label = "other_buffer";
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>

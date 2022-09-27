@@ -25,6 +25,8 @@ def make_key(k):
         k = 'CAPS'
     elif m := re.match(r'&bootloader', k):
         k = 'RESET'
+    elif m := re.match(r'&other_buffer', k):
+        k = 'OBUF'
     elif m := re.match(r'&bt (\S+)', k):
         k = m.group(1)
     elif m := re.match(r'&kp (\S+)', k):
