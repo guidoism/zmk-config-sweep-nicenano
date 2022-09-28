@@ -145,9 +145,9 @@
 
         mov_layer {
             bindings = <
- &none          &none                 &kp LA(LS(LC(E)))   &kp LA(LS(LC(S)))   &none         &kp TAB              &mt HOME PG_UP    &kp UP      &mt END PG_DN     &kp BACKSPACE
- &kp LALT       &kp LSHIFT            &kp LCTRL           &kp LCMD            &kp LC(SPACE) &other_buffer        &kp LEFT          &kp DOWN    &kp RIGHT         &kp RETURN
- &window_delete &window_delete_others &window_split_below &window_split_right &kp ESC       &kp LG(LEFT_BRACKET) &kp LC(LS(TAB))   &kp LC(TAB) &none             &none
+ &kp LA(LS(LC(P))) &kp LA(LS(LC(D)))     &kp LA(LS(LC(E)))   &kp LA(LS(LC(S)))   &none         &kp TAB              &mt HOME PG_UP    &kp UP      &mt END PG_DN     &kp BACKSPACE
+ &kp LALT          &kp LSHIFT            &kp LCTRL           &kp LCMD            &kp LC(SPACE) &other_buffer        &kp LEFT          &kp DOWN    &kp RIGHT         &kp RETURN
+ &window_delete    &window_delete_others &window_split_below &window_split_right &kp ESC       &kp LG(LEFT_BRACKET) &kp LC(LS(TAB))   &kp LC(TAB) &none             &none
                                                           &none               &none         &kp SPACE            &sl 3
             >;
         };
