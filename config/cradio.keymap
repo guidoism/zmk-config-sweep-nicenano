@@ -26,6 +26,50 @@
                 , <&macro_tap &kp O>
                 ;
         };
+        window_delete: window_delete {
+            label = "window_delete";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp 0>
+                ;
+        };
+        window_delete_others: window_delete_others {
+            label = "window_delete_others";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp 1>
+                ;
+        };
+        window_split_below: window_split_below {
+            label = "window_split_below";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp 2>
+                ;
+        };
+        window_split_right: window_split_right {
+            label = "window_split_right";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp 3>
+                ;
+        };
     };
 
     behaviors {
@@ -101,10 +145,10 @@
 
         mov_layer {
             bindings = <
- &none     &none       &kp LA(LS(LC(E))) &kp LA(LS(LC(S))) &none         &kp TAB              &mt HOME PG_UP    &kp UP      &mt END PG_DN     &kp BACKSPACE
- &kp LALT  &kp LSHIFT  &kp LCTRL         &kp LCMD          &kp LC(SPACE) &other_buffer        &kp LEFT          &kp DOWN    &kp RIGHT         &kp RETURN
- &none     &none       &none             &none             &kp ESC         &kp LG(LEFT_BRACKET) &kp LC(LS(TAB))   &kp LC(TAB) &none             &none
-                                         &none             &none         &kp SPACE            &sl 3
+ &none          &none                 &kp LA(LS(LC(E)))   &kp LA(LS(LC(S)))   &none         &kp TAB              &mt HOME PG_UP    &kp UP      &mt END PG_DN     &kp BACKSPACE
+ &kp LALT       &kp LSHIFT            &kp LCTRL           &kp LCMD            &kp LC(SPACE) &other_buffer        &kp LEFT          &kp DOWN    &kp RIGHT         &kp RETURN
+ &window_delete &window_delete_others &window_split_below &window_split_right &kp ESC       &kp LG(LEFT_BRACKET) &kp LC(LS(TAB))   &kp LC(TAB) &none             &none
+                                                          &none               &none         &kp SPACE            &sl 3
             >;
         };
 
