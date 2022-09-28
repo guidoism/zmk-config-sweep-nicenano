@@ -34,7 +34,7 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp 0>
+                , <&macro_tap &kp N0>
                 ;
         };
         window_delete_others: window_delete_others {
@@ -45,7 +45,7 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp 1>
+                , <&macro_tap &kp N1>
                 ;
         };
         window_split_below: window_split_below {
@@ -56,7 +56,7 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp 2>
+                , <&macro_tap &kp N2>
                 ;
         };
         window_split_right: window_split_right {
@@ -67,7 +67,7 @@
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LCTRL>
-                , <&macro_tap &kp 3>
+                , <&macro_tap &kp N3>
                 ;
         };
     };
